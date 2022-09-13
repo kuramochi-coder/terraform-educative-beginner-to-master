@@ -63,6 +63,8 @@ variable "person_with_address" {
   }
 }
 
+variable "nsg" {}
+
 # locals (variables in terraform)
 locals {
   first_part  = "hello"
@@ -165,4 +167,8 @@ output "address" {
 
 output "person_with_address" {
   value = var.person_with_address
+}
+
+output "nsg" {
+  value = var.nsg
 }
